@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "sql.stock" table ="stockmarket">
+      
+      <meta attribute = "class-description">
+         This class contains the stock detail. 
+      </meta>
+      
+      <id name = "ID" type = "string" column = "ID">
+         <generator class="assigned"/>
+      </id>
+      <property name = "name" column = "name" type = "string"/>
+      <property name = "price" column = "price" type = "string"/>
+      <property name = "change" column = "change" type = "string"/>
+       <property name = "PE" column = "PE" type = "string"/>
+       <property name = "percent" column = "per" type = "string"/>
+       <property name = "volume" column = "volume" type = "string"/>
+       <property name = "YTD" column = "YTD" type = "string"/>
+       <property name = "time" column = "time" type = "string"/>
+   </class>
+</hibernate-mapping>
